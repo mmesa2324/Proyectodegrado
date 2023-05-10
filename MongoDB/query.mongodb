@@ -1,0 +1,2 @@
+use('recomendacion_productos')
+find('Sales') // clinte, producto -ob_id

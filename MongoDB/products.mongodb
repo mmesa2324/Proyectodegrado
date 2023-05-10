@@ -1,0 +1,25 @@
+use("recomendacion_productos")
+
+
+db.createCollection('Products', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object', 
+            required: ['product_number','product_name','unit_measure', 'group_name'],
+            properties: {
+                product_number: {
+                    bsonType: 'number'
+                },
+                product_name: {
+                    bsonType: 'string'
+                },
+                unit_measure: {
+                    bsonType: 'string'       
+                },   
+                group_name: {
+                    bsonType: 'string'       
+                },
+            }
+        }
+    }
+})

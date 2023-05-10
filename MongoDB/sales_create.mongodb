@@ -1,0 +1,22 @@
+use("recomendacion_productos")
+
+db.Sales.insertMany({
+    quantity: 25,
+    sales_import: 153750,
+    year: 2019,
+    month:1,
+},
+{
+    quantity: 25,
+    sales_import: 256250,
+    year: 2019,
+    month:1,
+},
+{
+    quantity: 50,
+    sales_import: 667500,
+    year: 2019,
+    month: 1,  
+}
+)
+

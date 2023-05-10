@@ -1,0 +1,26 @@
+use("recomendacion_productos")
+
+
+db.createCollection('Sales', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object', 
+            required: ['quantity', 'sales_import','year', 'month'],
+            properties: {
+                quantity: {
+                    bsonType: 'number'       
+                },
+                sales_import: {
+                    bsonType: 'number'       
+                },
+                year: {
+                    bsonType: 'number'
+                   
+                },
+                month: {
+                    bsonType: 'number'
+                },
+            }
+        }
+    }
+})

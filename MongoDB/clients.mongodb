@@ -1,0 +1,35 @@
+use("recomendacion_productos")
+
+
+db.createCollection('Clients', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object', 
+            required: ['id_type', 'client_code','client_name', 'economic_activity', 'adress', 'City','credit_limit'],
+            properties: {
+                client_code: {
+                    bsonType: 'string'
+                },
+                client_name: {
+                    bsonType: 'string'
+                },
+                id_type: {
+                    bsonType: 'number'       
+                },   
+                economic_activity: {
+                    bsonType: 'number'       
+                },
+                adress: {
+                    bsonType: 'string'       
+                },
+                City: {
+                    bsonType: 'string'
+                   
+                },
+                credit_limit: {
+                    bsonType: 'number'
+                },
+            }
+        }
+    }
+})

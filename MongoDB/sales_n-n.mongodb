@@ -1,0 +1,46 @@
+
+
+// db.Products.find()
+// db.stores.find()
+use("recomendacion_productos")
+db.Sales.updateMany(
+    {_id: ObjectId('644a9e0eb6f99a54e4bdfb4c')},
+    {
+        $set: {
+            clients_ids: [
+            ObjectId('644a9fd9df9d3e76a9f8c191')
+            ]
+        }
+    },
+    {
+        $set: {
+            products_ids: [
+            ObjectId('644a9fd9df9d3e76a9f8c191')
+            ]
+        }
+    },
+)
+
+db.Salesbyproduct.aggregate([
+    {
+        $lookup: {
+          from: 'Products',
+          localField: 'products_ids',
+          foreignField: '_id',
+          as: 'products'
+        }
+    }
+
+])
+
+db.Salesbyproduct.aggregate([
+    {
+        $lookup: {
+          from: 'Clients',
+          localField: 'clients_ids',
+          foreignField: '_id',
+          as: 'clients'
+        }
+    }
+
+])

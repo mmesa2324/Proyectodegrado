@@ -1,0 +1,11 @@
+use("recomendacion_productos")
+
+db.Clients.insertOne({
+    id_type: 31,
+    client_code: '900526200-3',
+    client_name: '2MC PINTURA ELECTROSTATICA SAS',
+    economic_activity:2592,
+    adress: 'DG 47 52 32 ALTO DE LA CAPILLA',
+    City: 'RIONEGRO',
+    credit_limit: 5000000,
+})

@@ -1,0 +1,18 @@
+use("recomendacion_productos")
+
+
+db.createCollection('Salesbyproduct', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object', 
+            required: ['sugestion'],
+            properties: {
+                sugestion: {
+                    bsonType: 'number'       
+                },
+            }
+        }
+    }
+})
+
+  

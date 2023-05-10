@@ -1,0 +1,23 @@
+use("recomendacion_productos")
+
+db.Products.insertMany({
+    product_number: 3000920,
+    product_name: 'ROLLO MANUAL 15x15x300 BYCSA',
+    unit_measure: 'Und',
+    group_name:'ROLLOS FABRICADOS',
+},
+{
+    product_number: 3001538,
+    product_name: 'OPTIUM AIR SCREW X 1 GAL',
+    unit_measure: 'Und',
+    group_name:'LUBRICANTES FABRICAD',
+},
+{
+    product_number: 3000971,
+    product_name: 'OPTIUM REC 46 X 05 GAL',
+    unit_measure: 'Und',
+    group_name:'LUBRICANTES FABRICAD',  
+}
+)
+
+

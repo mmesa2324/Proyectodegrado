@@ -1,0 +1,34 @@
+//Clientes
+{
+  "Codigo Cliente": "C9005262007",
+  "Identificacion": "900526200-3",
+  "Nombre Cliente": "2MC PINTURA ELECTROSTATICA SAS",
+  "Tipo identificacion": 31,
+  "Actividad Económica": 2592,
+  "Direccion": "DG 47 52 32 ALTO DE LA CAPILLA",
+  "Ciudad": "RIONEGRO",
+  "Límite de crédito": 5000000
+}
+
+//Productos
+{
+  "Número de artículo": 3000920,
+  "Descripción del artículo": "ROLLO MANUAL 15x15x300 BYCSA",
+  "Unidad de medida de ventas": "Und",
+  "Nombre Grupo": "ROLLOS FABRICADOS"
+}
+
+
+//Ventas por producto
+{
+  "Número de artículo": 3000005,
+  "Descripción del artículo": "ACIDO BORICO GRANULAR X 25 KG",
+  "Codigo cliente": "C030056697",
+  "Nombre Cliente": "SERRANO QUINTO LUIS",
+  "Cantidad": 25,
+  "Importe de Ventas": 153750,
+  "Año": 2019,
+  "Mes": 1
+}
+
+
